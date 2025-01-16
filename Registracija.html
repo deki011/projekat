@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registracija</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Registruj se</h2>
+        <form id="registrationForm" method="POST">
+            <label for="name">Ime i Prezime</label>
+            <input type="text" id="name" name="name" placeholder="Ovde unesite ime i prezime" required>
+            <small id="nameError" class="error"></small>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Ovde unesite email" required>
+            <small id="emailError" class="error"></small>
+
+            <label for="phone">Telefon</label>
+            <input type="text" id="phone" name="phone" placeholder="Ovde unesite telefon (opciono)">
+            <small id="phoneError" class="error"></small>
+
+            <label for="password">Lozinka</label>
+            <input type="password" id="password" name="password" placeholder="Ovde unesite lozinku" required>
+            <small id="passwordError" class="error"></small>
+
+            <label for="confirmPassword">Ponovljena Lozinka</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Ovde unesite ponovljenu lozinku" required>
+            <small id="confirmPasswordError" class="error"></small>
+
+            <button type="submit">Registruj se</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
